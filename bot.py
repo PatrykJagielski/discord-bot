@@ -10,7 +10,7 @@ def get_question():
     qs = ""
     id = 1
     answear = 0
-    response = requests.get("http://127.0.0.1:8000/api/random/")
+    response = requests.get("http://sheltered-mesa-78550.herokuapp.com/api/random/")
     json_data = json.loads(response.text)
     qs += "Question: \n"
     qs += json_data[0]["title"] + "\n"
